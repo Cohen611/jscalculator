@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      var a,b;
+      function setValue()
+      {
+        a= Number(document.getElementById("a").value);
+        b=Number(document.getElementById("b").value);
+      }
+      function sum()
+      {
+        setValue();
+        result=a+b;
+        alert("The sum equals to "+result);
+      }
+      function rest()
+      {
+        setValue();
+        result=a-b;
+        alert("The rest equals to "+result);
+      }
+      function mult()
+      {
+        setValue();
+        result=a*b;
+        alert("The operation equals to " + result);
+      }
+      function div()
+      {
+        setValue();
+        result=a/b;
+        alert("The operation equals to " + result);
+      }
+    </script>
+    <title>Javascript Calculator</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <h1>Javascript Calculator</h1>
+
+    <div class="calc">
+      <input id= "a" type="text"/>
+      <input id= "b" type="text"/>
+      <input class="btn btn-primary" type = "button" onclick ="sum()" value="sum"/>
+      <input class="btn btn-primary"type = "button" onclick ="rest()" value="rest"/>
+      <input class="btn btn-primary" type = "button" onclick ="mult()" value="multiply"/>
+      <input class="btn btn-primary" type = "button" onclick ="div()" value="divide"/>
+
+
+    </div>
+
+  </body>
+</html>
